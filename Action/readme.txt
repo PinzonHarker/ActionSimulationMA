@@ -9,3 +9,11 @@ Para compilar dar el comando "$make" con gsl instalado e incluido. Se crea
 archivo "action.x", ejecutable de cpp que se ejecuta con:
     ./action.x
 
+Bibliografía:
+
+-http://www.eftaylor.com/leastaction.html
+- http://www.eftaylor.com/software/Action.pdf
+- http://www.eftaylor.com/software/ActionApplets/LeastAction.html
+- https://iluvatar.bitbucket.io/HerrComp/
+- https://www.gnu.org/software/gsl/doc/html/diff.html
+- https://www.gnu.org/software/gsl/doc/html/integration.html
