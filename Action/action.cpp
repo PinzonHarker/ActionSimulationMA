@@ -48,12 +48,12 @@ int main(int argc, char const *argv[])
     double key = 4;
     double result, error;
     double expected1 = 1.5;
-    double expected2 = -0.7;
+    double expected2 = -70.0;
     double alpha = 1.0;
 
     std::cout << "Masa: " << m << "\t" << "t_1 = " << param_ini.t_1 << "\t" << "t_2 = " << param_ini.t_2 << std::endl;
 
-    std::cout << "Probando potencial cero con energía cinética 1/2*m*v^2. x(t) = t como movimiento clásico y desviaciones en un campo cero. Se puede modificar \\
+    std::cout << "Probando potencial cero con energía cinética 1/2*m*v^2. x(t) = t como movimiento clásico y desviaciones en un campo cero. \n Se puede modificar \\
 accediendo a x(t) prueba y colocando la función en parametros de t" << std::endl;
     gsl_function L_0;
     L_0.function = &f_0;
@@ -69,8 +69,7 @@ accediendo a x(t) prueba y colocando la función en parametros de t" << std::end
               << "Error estimado en máquina             = " << error << "\n"
               << "Desviación respecto teórico           = " << result - expected1 << std::endl;
 
-    std::cout << "Probando potencial con gravedad y energía cinética 1/2*m*v^2. x(t) = t^2 como movimiento clásico y desviaciones en un campo gravitacional. \\
-    Se puede modificar accediendo a x(t) prueba y colocando la función en parametros de t" << std::endl;
+    std::cout << "Probando potencial con gravedad y energía cinética 1/2*m*v^2. x(t) = t^2 como movimiento clásico y desviaciones en un campo gravitacional. \n Se puede modificar accediendo a x(t) prueba y colocando la función en parametros de t" << std::endl;
 
     gsl_function L_g;
     L_g.function = &f_g;
